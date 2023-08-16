@@ -1,6 +1,6 @@
 /* MOBILE STYLES */
 @media only screen and (max-width: 600px) {
-	.lightnavbarContain  {
+	.lightnavbarContain {
     background-color: #ec4c8a;
     display: flex;
     gap: 5px;
@@ -34,7 +34,7 @@
 
 /* DESDKTOP STYLES */
 @media only screen and (min-width: 600px) {
-  .lightnavbarContain  {
+  .lightnavbarContain {
     background-color: #ec4c8a;
     display: flex;
     gap: 25px;
@@ -42,18 +42,18 @@
     padding: 2% 5%;
     color: #fff;
   }
-  
+
   .lightnavArrow {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  
+
   .lightarrow {
     margin-top: 0.3rem;
   }
-  
+
   .lightnavIcon {
     margin-top: 0.68rem;
     font-size: 1.5rem;
