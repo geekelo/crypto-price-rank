@@ -1,0 +1,67 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 600px) {
+  .lightnavbarContain {
+    background-color: #ec4c8a;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    color: #fff;
+    padding: 5% 7%;
+    align-items: center;
+  }
+
+  .lightnavArrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightarrow {
+    margin-top: 0.3rem;
+  }
+
+  .lightnavIcon {
+    font-size: 1.5rem;
+  }
+
+  .lightthemebtn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+}
+
+/* DESDKTOP STYLES */
+@media only screen and (min-width: 600px) {
+  .lightnavbarContain {
+    background-color: #ec4c8a;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 2% 5%;
+    color: #fff;
+  }
+
+  .lightnavArrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightarrow {
+    margin-top: 0.3rem;
+  }
+
+  .lightnavIcon {
+    margin-top: 0.68rem;
+    font-size: 1.5rem;
+  }
+
+  .lightthemebtn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+}
