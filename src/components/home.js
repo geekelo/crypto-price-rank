@@ -6,7 +6,7 @@ function Home() {
       </div>
       <main>
         <ul>
-        ppp
+          ppp
         </ul>
       </main>
     </section>

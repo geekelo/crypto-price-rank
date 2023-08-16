@@ -1,6 +1,6 @@
 /* MOBILE STYLES */
 @media only screen and (max-width: 600px) {
-	.lightnavbarContain {
+  .lightnavbarContain {
     background-color: #ec4c8a;
     display: flex;
     gap: 5px;
