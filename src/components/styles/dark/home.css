@@ -6,6 +6,6 @@
 
 .allstats {
   background-color: #ce4177;
-  background: linear-gradient(to right, #ce4177, #161515);
+  background-image: linear-gradient(to right, #ce4177, #161515);
   color: #fff;
 }

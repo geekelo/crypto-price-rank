@@ -19,7 +19,7 @@
 
   .detailslist {
     display: table;
-    height: 10vh; 
+    height: 10vh;
     align-items: center;
     font-size: 0.6rem;
     justify-content: center;
@@ -68,7 +68,7 @@
 
   .detailslist {
     display: table;
-    height: 10vh; 
+    height: 10vh;
     align-items: center;
     font-size: 1rem;
     justify-content: center;

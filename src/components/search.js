@@ -1,6 +1,4 @@
 import { useSelector } from 'react-redux';
-import './styles/light/search.css';
-import './styles/dark/search.css';
 import './styles/general/search.css';
 
 function Search() {
