@@ -260,8 +260,9 @@ You can offer Contributions, submit an [issue](../../issues/), and make a featur
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for inspiring this project
-> Fonts: [Google Fonts](https://fonts.google.com/)
+- > I would like to thank Microverse for inspiring this project 
+- > Fonts: [Google Fonts](https://fonts.google.com/)
+- > Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
