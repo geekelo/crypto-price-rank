@@ -11,24 +11,43 @@ function Home() {
   const currTheme = useSelector((state) => state.theme.value);
   const cryptos = useSelector((state) => state.cryptos.value);
   const dispatch = useDispatch();
-  const [cryptoList, setCrypotoList] = useState(cryptos);
+  const [cryptoList, setCryptoList] = useState([]);
 
   useEffect(() => {
-    dispatch(fetchCryptos());
+    dispatch(fetchCryptos()).then((data) => {
+      setCryptoList(data.payload); // Set the fetched data to the state
+    });
   }, [dispatch]);
 
-  const handleFliterednames = (searchvalue) => {
-    const filteredcryptos = cryptos.filter(
-      (each) => each.name.toLowerCase().includes(searchvalue.toLowerCase()),
-    );
-    setCrypotoList(filteredcryptos);
+  const handleFilteredNames = (searchValue, rank) => {
+    if (rank === 'null') {
+      if (searchValue !== '' && searchValue.trim().length > 0) {
+        const filteredCryptos = cryptos.filter(
+          (each) => each.name.toLowerCase().includes(searchValue.toLowerCase()),
+        );
+        setCryptoList(filteredCryptos);
+      } else {
+        setCryptoList(cryptos);
+      }
+    } else {
+      const sortedCryptos = [...cryptos].sort((a, b) => b[rank] - a[rank]);
+
+      if (searchValue !== '' && searchValue.trim().length > 0) {
+        const filteredSortedCryptos = sortedCryptos.filter(
+          (each) => each.name.toLowerCase().includes(searchValue.toLowerCase()),
+        );
+        setCryptoList(filteredSortedCryptos);
+      } else {
+        setCryptoList(sortedCryptos);
+      }
+    }
   };
 
   return (
     <section>
       <div className={`landingarea ${currTheme === true ? 'darklandingarea' : 'lightlandingarea'}`}>
         <div className={`${currTheme === true ? 'darklandingbg' : 'lightlandingbg'}`}>
-          <Search handleFliterednames={handleFliterednames} />
+          <Search handleFliterednames={handleFilteredNames} />
         </div>
       </div>
       <p className={`allstats ${currTheme === true ? 'darkallstats' : 'lightallstats'}`}> CRYPTO RANKING </p>

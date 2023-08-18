@@ -50,6 +50,10 @@
     text-align: left;
   }
 
+  .tagtitle {
+    font-size: 1.7rem;
+  }
+
   .copyright {
     font-size: 1rem;
     font-family: 'Lato', sans-serif;

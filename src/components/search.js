@@ -1,15 +1,16 @@
 import { useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles/general/search.css';
 
 function Search({ handleFliterednames }) {
   const currTheme = useSelector((state) => state.theme.value);
-  let searchValue;
+  const [searchValue, setSearchValue] = useState('');
+  const [cryptoRank, setCryptoRank] = useState('null');
 
-  const triggerFilterHandler = (inputs) => {
-    searchValue = inputs;
-    handleFliterednames(searchValue);
-  };
+  useEffect(() => {
+    handleFliterednames(searchValue, cryptoRank);
+  }, [searchValue, cryptoRank]);
 
   return (
     <div>
@@ -19,14 +20,14 @@ function Search({ handleFliterednames }) {
             type="search"
             placeholder="Search"
             value={searchValue}
-            onChange={(e) => triggerFilterHandler(e.target.value)}
+            onChange={(e) => setSearchValue(e.target.value)}
             className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`}
           />
         </div>
         <div className={`input ${currTheme === true ? 'darkinput' : 'lightinput'}`}>
-          <select className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`}>
-            <option value="price">- Select Ranking -</option>
-            <option value="price">Rank by Price</option>
+          <select onChange={(e) => setCryptoRank(e.target.value)} className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`}>
+            <option value="null">- Select Ranking -</option>
+            <option value="priceUsd">Rank by Price</option>
             <option value="supply">Rank by Supply</option>
           </select>
         </div>
