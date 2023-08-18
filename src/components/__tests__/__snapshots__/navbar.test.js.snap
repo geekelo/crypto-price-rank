@@ -2,7 +2,6 @@
 
 exports[`NavBar matches snapshot 1`] = `
 <DocumentFragment>
-   
   <header
     class="navbarContain lightnavbarContain"
   >

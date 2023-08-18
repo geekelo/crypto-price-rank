@@ -11,9 +11,9 @@ test('Cryptopage component matches snapshot', () => {
       <MemoryRouter initialEntries={['/1']}>
         <Routes>
           <Route path="/:id" component={Cryptopage} />
-         </Routes>
+        </Routes>
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   ).toJSON();
 
   expect(tree).toMatchSnapshot();

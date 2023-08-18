@@ -15,7 +15,7 @@ test('Search component matches snapshot', () => {
   const mockHandleFilteredNames = jest.fn();
 
   const { asFragment } = render(<Search handleFliterednames={mockHandleFilteredNames} />);
-  
+
   // Compare the rendered component to a stored snapshot
   expect(asFragment()).toMatchSnapshot();
 });

@@ -8,20 +8,19 @@ import CryptoList from '../cryptolist';
 test('CryptoList component matches snapshot', () => {
   const { asFragment } = render(
     <Provider store={store}>
-      <Router> {/* Use BrowserRouter */}
+      <Router>
         <CryptoList
           id="1"
           name="Bitcoin"
           price="50000"
         />
       </Router>
-    </Provider>
+    </Provider>,
   );
 
   // Compare the rendered component to a stored snapshot
   expect(asFragment()).toMatchInlineSnapshot(`
 <DocumentFragment>
-   
   <a
     class="list lightlist"
     href="/cryptopage/1"

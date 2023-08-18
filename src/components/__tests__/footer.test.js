@@ -7,8 +7,8 @@ import Footer from '../footer';
 test('Home component matches snapshot', () => {
   const { asFragment } = render(
     <Provider store={store}>
-        <Footer />
-    </Provider>
+      <Footer />
+    </Provider>,
   );
 
   // Compare the rendered component to a stored snapshot

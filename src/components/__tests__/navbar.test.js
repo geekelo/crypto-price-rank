@@ -8,10 +8,10 @@ import NavBar from '../navbar';
 test('NavBar matches snapshot', () => {
   const { asFragment } = render(
     <Provider store={store}>
-      <MemoryRouter> {/* Wrap your component with MemoryRouter */}
+      <MemoryRouter>
         <NavBar />
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   );
 
   // Compare the rendered component to a stored snapshot

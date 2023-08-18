@@ -11,7 +11,7 @@ test('Home component matches snapshot', () => {
       <MemoryRouter>
         <Home />
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   );
 
   // Compare the rendered component to a stored snapshot
