@@ -3,8 +3,9 @@
   color: #fff;
   background-image: url('./../../assets/bg.png');
 }
+
 .lightallstats {
   background-color: #ce4177;
-  background: linear-gradient(to right, #161515, #ce4177);
+  background-image: linear-gradient(to right, #161515, #ce4177);
   color: #fff;
 }
