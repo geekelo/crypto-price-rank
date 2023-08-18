@@ -60,6 +60,7 @@ After you're finished please remove all the comments and instructions.
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
+![image](https://github.com/geekelo/crypto-price-rank/assets/102464578/3a1021bc-7586-44a9-a09f-1bb9f35525a1)
 
 
 # 📖The CRYPTO PRICE RANK<a name="about-project"></a>
@@ -103,7 +104,7 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 </details>
 
 <details>
-  <summary>REACT, REDUX</summary>
+  <summary>REACT</summary>
   <ul>
     <li><a href="https://create-react-app.dev/docs/getting-started">Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.</a></li>
   </ul>
@@ -111,6 +112,10 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 
 <details>
   <summary>REDUX</summary>
+</details>
+
+<details>
+  <summary>API</summary>
 </details>
 
 <!-- Features -->
