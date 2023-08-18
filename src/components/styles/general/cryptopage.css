@@ -1,0 +1,97 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 768px) {
+  .cryptoarea {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 600;
+    gap: 5px;
+  }
+
+  .cryptoname {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .detailslist {
+    display: table;
+    height: 10vh; 
+    align-items: center;
+    font-size: 0.6rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .detailslist span {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 1.4rem;
+  }
+
+  .detailslist span:nth-child(1) {
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-left: 2rem;
+  }
+
+  .detailslist span:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.5rem;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 768px) {
+  .cryptoarea {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 600;
+    gap: 10px;
+  }
+
+  .cryptoname {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .detailslist {
+    display: table;
+    height: 10vh; 
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .detailslist span {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 1rem;
+  }
+
+  .detailslist span:nth-child(1) {
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.4rem;
+    padding-left: 4rem;
+  }
+
+  .detailslist span:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+  }
+}

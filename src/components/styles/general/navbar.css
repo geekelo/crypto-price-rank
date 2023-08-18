@@ -1,0 +1,65 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 768px) {
+  .navbarContain {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 5% 7%;
+    align-items: center;
+  }
+
+  .navArrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .lnavIcon {
+    font-size: 1.5rem;
+  }
+
+  .themebtn {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+/* DESDKTOP STYLES */
+@media only screen and (min-width: 768px) {
+  .navbarContain {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+
+  .navArrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 500;
+  }
+
+  .arrow {
+    margin-top: 0.3rem;
+  }
+
+  .navIcon {
+    margin-top: 0.68rem;
+    font-size: 1.5rem;
+  }
+
+  .themebtn {
+    background-color: transparent;
+    border: none;
+  }
+}

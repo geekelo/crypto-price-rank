@@ -1,10 +1,11 @@
-import { BiSolidChevronLeft, BiSolidAdjust } from 'react-icons/bi';
+import { BiSolidChevronLeft, BiSolidAdjust, BiRefresh } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink, useLocation } from 'react-router-dom';
 import { toggleMode } from './redux/theme/themeSlice';
 import './styles/light/navbar.css';
 import './styles/dark/navbar.css';
+import './styles/general/navbar.css';
 import logo from './assets/logo.png';
-import './styles/styles.css';
 
 function NavBar() {
   const currTheme = useSelector((state) => state.theme.value);
@@ -14,19 +15,33 @@ function NavBar() {
     dispatch(toggleMode());
   };
 
+  const location = useLocation();
+  const isHomepage = location.pathname === '/';
+
   return (
-    <header className={`${currTheme === true ? 'darknavbarContain' : 'lightnavbarContain'}`}>
-      <div className={`${currTheme === true ? 'darknavArrow' : 'lightnavArrow'}`}>
-        <p><BiSolidChevronLeft className={`${currTheme === true ? 'darkarrow' : 'lightarrow'}`} /></p>
-        <p>Back</p>
+    <header className={`navbarContain ${currTheme === true ? 'darknavbarContain' : 'lightnavbarContain'}`}>
+      <div className={`navArrow ${currTheme === true ? 'darknavArrow' : 'lightnavArrow'}`}>
+        {
+          !isHomepage
+            ? (
+              <NavLink
+                to="/"
+                className={`navArrow ${currTheme === true ? 'darknavArrow' : 'lightnavArrow'}`}
+              >
+                <p><BiSolidChevronLeft size="30" className={`arrow ${currTheme === true ? 'darkarrow' : 'lightarrow'}`} /></p>
+              </NavLink>
+            )
+            : (<p><BiRefresh size="30" onClick={() => window.location.reload()} className={`arrow ${currTheme === true ? 'darkarrow' : 'lightarrow'}`} /></p>)
+        }
+
       </div>
-      <p className={`${currTheme === true ? 'darklogo' : 'lightlogo'}`}><img src={logo} width="100" alt="Logo" /></p>
+      <p className={`logo ${currTheme === true ? 'darklogo' : 'lightlogo'}`}><img src={logo} width="100" alt="Logo" /></p>
       <button
         type="button"
-        className={`${currTheme === true ? 'darkthemebtn' : 'lightthemebtn'}`}
+        className={`themebtn ${currTheme === true ? 'darkthemebtn' : 'lightthemebtn'}`}
         onClick={toggleTheme}
       >
-        <BiSolidAdjust className={`${currTheme === true ? 'darknavIcon' : 'lightnavIcon'}`} />
+        <BiSolidAdjust className={`navIcon ${currTheme === true ? 'darknavIcon' : 'lightnavIcon'}`} />
       </button>
     </header>
   );
