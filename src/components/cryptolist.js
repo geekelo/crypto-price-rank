@@ -9,12 +9,11 @@ import coin from './assets/coin.png';
 
 function CryptoList({
   id,
-  rank,
   name,
   price,
   supply,
 }) {
-  console.log(id, rank, price, supply);
+  console.log(id, price, supply);
 
   const currTheme = useSelector((state) => state.theme.value);
 
@@ -35,7 +34,6 @@ function CryptoList({
 
 CryptoList.propTypes = {
   id: PropTypes.string.isRequired,
-  rank: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   supply: PropTypes.string.isRequired,
