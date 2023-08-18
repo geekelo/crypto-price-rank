@@ -1,67 +1,13 @@
-/* MOBILE STYLES */
-@media only screen and (max-width: 600px) {
-  .darknavbarContain {
-    background-color: #111010;
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    color: #fff;
-    padding: 5% 7%;
-    align-items: center;
-  }
-
-  .darknavArrow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .darkarrow {
-    margin-top: 0.3rem;
-  }
-
-  .darknavIcon {
-    font-size: 1.5rem;
-  }
-
-  .darkthemebtn {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-  }
+.darknavbarContain {
+  background-color: #111010;
+  color: #fff;
 }
 
-/* DESDKTOP STYLES */
-@media only screen and (min-width: 600px) {
-  .darknavbarContain {
-    background-color: #111010;
-    display: flex;
-    gap: 25px;
-    justify-content: space-between;
-    padding: 2% 5%;
-    color: #fff;
-  }
+.darkthemebtn {
+  background-color: transparent;
+  color: #fff;
+}
 
-  .darknavArrow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .darkarrow {
-    margin-top: 0.3rem;
-  }
-
-  .darknavIcon {
-    margin-top: 0.68rem;
-    font-size: 1.5rem;
-  }
-
-  .darkthemebtn {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-  }
+.navArrow {
+  color: #fff;
 }

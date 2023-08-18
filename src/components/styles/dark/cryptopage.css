@@ -1,0 +1,16 @@
+.darkcryptoarea {
+  background-color: aqua;
+  background-image: url('../../assets/bg.png');
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.darkdetailslist {
+  background-color: #161515;
+  color: #fff;
+}
+
+.darkdetailslist:nth-child(even) {
+  background-color: #1f1f1f;
+}

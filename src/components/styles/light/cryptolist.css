@@ -1,0 +1,19 @@
+.lightlist:nth-child(2n + 1) {
+  background-color: #ce4177;
+}
+
+.lightlist:nth-child(4n + 1) {
+  background-color: #dc4882;
+}
+
+.lightlist:nth-child(4n + 4) {
+  background-color: #dc4882;
+}
+
+.lightlist:nth-child(4n + 2) {
+  background-color: #ce4177;
+}
+
+.lightlist:nth-child(4n + 3) {
+  background-color: #ce4177;
+}
