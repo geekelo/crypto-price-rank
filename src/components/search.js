@@ -1,14 +1,27 @@
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import './styles/general/search.css';
 
-function Search() {
+function Search({ handleFliterednames }) {
   const currTheme = useSelector((state) => state.theme.value);
+  let searchValue;
+
+  const triggerFilterHandler = (inputs) => {
+    searchValue = inputs;
+    handleFliterednames(searchValue);
+  };
 
   return (
     <div>
       <form className={`searchContain ${currTheme === true ? 'darksearchContain' : 'lightsearchContain'}`}>
         <div className={`input ${currTheme === true ? 'darkinput' : 'lightinput'}`}>
-          <input type="search" placeholder="Search" className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`} />
+          <input
+            type="search"
+            placeholder="Search"
+            value={searchValue}
+            onChange={(e) => triggerFilterHandler(e.target.value)}
+            className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`}
+          />
         </div>
         <div className={`input ${currTheme === true ? 'darkinput' : 'lightinput'}`}>
           <select className={`formField ${currTheme === true ? 'darkformField' : 'lightformField'}`}>
@@ -21,5 +34,9 @@ function Search() {
     </div>
   );
 }
+
+Search.propTypes = {
+  handleFliterednames: PropTypes.func.isRequired,
+};
 
 export default Search;
