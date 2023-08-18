@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="landingarea lightlandingarea"
+    >
+      <div
+        class="lightlandingbg"
+      >
+        <div>
+          <form
+            class="searchContain lightsearchContain"
+          >
+            <div
+              class="input lightinput"
+            >
+              <input
+                class="formField lightformField"
+                placeholder="Search"
+                type="search"
+                value=""
+              />
+            </div>
+            <div
+              class="input lightinput"
+            >
+              <select
+                class="formField lightformField"
+              >
+                <option
+                  value="null"
+                >
+                  - Select Ranking -
+                </option>
+                <option
+                  value="priceUsd"
+                >
+                  Rank by Price
+                </option>
+                <option
+                  value="supply"
+                >
+                  Rank by Supply
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <p
+      class="allstats lightallstats"
+    >
+       CRYPTO RANKING 
+    </p>
+    <main>
+      <ul
+        class="listContain lightlistContain"
+      />
+    </main>
+  </section>
+</DocumentFragment>
+`;

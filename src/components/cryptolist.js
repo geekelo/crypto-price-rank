@@ -11,10 +11,7 @@ function CryptoList({
   id,
   name,
   price,
-  supply,
 }) {
-  console.log(id, price, supply);
-
   const currTheme = useSelector((state) => state.theme.value);
 
   return (
@@ -36,7 +33,6 @@ CryptoList.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  supply: PropTypes.string.isRequired,
 };
 
 export default CryptoList;
