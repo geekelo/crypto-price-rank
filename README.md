@@ -204,6 +204,7 @@ If you get a flood of errors keep in mind that linters guide you in writing a cl
 ```
 ### Run Tests <a name="run-tests"></a>
 You can run this program on using `npm start`
+You can run tests for this program using `npm test`
 
 ### Deployment <a name="deployment"></a>
 
