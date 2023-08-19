@@ -60,6 +60,7 @@ function Home() {
               supply={each.supply}
               price={each.priceUsd}
               name={each.name}
+              rank={each.rank}
             />
           ))}
         </ul>

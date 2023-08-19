@@ -9,12 +9,12 @@
 
   .icon {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     font-family: 'Proza Libre', sans-serif;
     font-weight: 800;
     gap: 5px;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     text-align: left;
   }
 
@@ -40,13 +40,13 @@
 
   .icon {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     font-family: 'Proza Libre', sans-serif;
     font-weight: 800;
     gap: 5px;
     font-size: 1.7rem;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     text-align: left;
   }
 

@@ -1,0 +1,15 @@
+.overlay {
+  background-image: url('../../assets/bggif.gif');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Proza Libre', sans-serif;
+  color: #fff;
+}
+
+.quoteCointainer {
+  font-weight: 500;
+  width: 50%;
+  color: #fff;
+}

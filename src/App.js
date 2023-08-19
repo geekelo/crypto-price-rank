@@ -5,6 +5,7 @@ import './components/styles/general/App.css';
 import Home from './components/home';
 import Cryptopage from './components/cryptopage';
 import Footer from './components/footer';
+import NotFound from './components/notFound';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cryptoPage/:id" element={<Cryptopage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
