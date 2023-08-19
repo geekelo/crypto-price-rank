@@ -60,6 +60,7 @@ After you're finished please remove all the comments and instructions.
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
+![image](https://github.com/geekelo/crypto-price-rank/assets/102464578/3a1021bc-7586-44a9-a09f-1bb9f35525a1)
 
 
 # 📖The CRYPTO PRICE RANK<a name="about-project"></a>
@@ -103,7 +104,7 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 </details>
 
 <details>
-  <summary>REACT, REDUX</summary>
+  <summary>REACT</summary>
   <ul>
     <li><a href="https://create-react-app.dev/docs/getting-started">Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.</a></li>
   </ul>
@@ -111,6 +112,10 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 
 <details>
   <summary>REDUX</summary>
+</details>
+
+<details>
+  <summary>API</summary>
 </details>
 
 <!-- Features -->
@@ -152,7 +157,7 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 > View the live demo of this project by clicking the text below.
 <!-- - [See Live Demo via Github pages](https://geekelo.github.io/bookstore-cms/) -->
 - [See Live Demo via Render](https://crypto-price-ranker.onrender.com)
-<!-- - [First Presenation Video](https://www.loom.com/share/719c333faa524c5db6930878f33b809b) -->
+- [First Presentation Video](https://youtu.be/1zCEFFYB-So)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,8 +260,9 @@ You can offer Contributions, submit an [issue](../../issues/), and make a featur
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for inspiring this project
-> Fonts: [Google Fonts](https://fonts.google.com/)
+- > I would like to thank Microverse for inspiring this project 
+- > Fonts: [Google Fonts](https://fonts.google.com/)
+- > Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
