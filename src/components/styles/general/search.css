@@ -1,0 +1,108 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 768px) {
+  .searchContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    gap: 3vh;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .input {
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding-left: 0.4rem;
+    background-color: #fff;
+  }
+
+  .input:nth-child(2) {
+    background-color: #ec4c8a;
+    color: #fff;
+  }
+
+  .formField {
+    border: none;
+    padding-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+  }
+
+  .formField:focus {
+    border: none;
+    outline: none;
+  }
+
+  select {
+    display: flex;
+    width: 90%;
+    color: #fff;
+    background-color: #ec4c8a;
+  }
+
+  option {
+    background-color: #ec4c8a;
+    color: #fff;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 768px) {
+  .searchContain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    gap: 3vh;
+  }
+
+  .input {
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    border-radius: 2rem;
+    padding-left: 0.2rem;
+    background-color: #fff;
+    padding-right: 1.5rem;
+  }
+
+  .input:nth-child(2) {
+    background-color: #ec4c8a;
+    color: #fff;
+  }
+
+  .formField {
+    border: none;
+    padding-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    display: flex;
+    height: 6vh;
+    width: 100%;
+  }
+
+  .formField:focus {
+    border: none;
+    outline: none;
+  }
+
+  select {
+    display: flex;
+    width: 90%;
+    color: #fff;
+    background-color: #ec4c8a;
+  }
+
+  option {
+    background-color: #ec4c8a;
+    color: #fff;
+  }
+}
