@@ -1,0 +1,16 @@
+.lightcryptoarea {
+  background-color: #ce4177;
+  background-image: url('../../assets/bggif.gif');
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lightdetailslist {
+  background-color: #ce4177;
+  color: #fff;
+}
+
+.lightdetailslist:nth-child(even) {
+  background-color: #dc4882;
+}

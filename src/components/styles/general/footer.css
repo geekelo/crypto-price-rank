@@ -1,0 +1,61 @@
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 800;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+  }
+
+  .tagtitle {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+/* DESKTOP DEVICES */
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 800;
+    gap: 5px;
+    font-size: 1.7rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .tagtitle {
+    font-size: 1.7rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+  }
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="footer lightfooter"
+  >
+    <img
+      alt="logo"
+      src="logoicon.png"
+      width="55"
+    />
+    <div
+      class="icon lighticon"
+    >
+      <p
+        class="tagtitle"
+      >
+        CRYPTO PRICE RANK
+      </p>
+      <p
+        class="copyright"
+      >
+         © COPYRIGHT GEEKELO 2023
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

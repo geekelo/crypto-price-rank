@@ -1,0 +1,79 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 768px) {
+  .list {
+    width: 100%;
+    height: 20vh;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .coinDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .gotoArrow {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  p {
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6rem;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 768px) {
+  .list {
+    height: 30vh;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 1rem  4vh;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .coinDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .gotoArrow {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+  }
+}
