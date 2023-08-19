@@ -10,6 +10,7 @@ function Search({ handleFliterednames }) {
 
   useEffect(() => {
     handleFliterednames(searchValue, cryptoRank);
+    // eslint-disable-next-line
   }, [searchValue, cryptoRank]);
 
   return (

@@ -1,5 +1,7 @@
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { fetchCryptos } from './redux/crypto/cryptosSlice';
 import './styles/general/cryptopage.css';
 import './styles/dark/cryptopage.css';
 import './styles/light/cryptopage.css';
@@ -10,47 +12,56 @@ import coins from './assets/coins.png';
 function Cryptopage() {
   const currTheme = useSelector((state) => state.theme.value);
   const cryptos = useSelector((state) => state.cryptos.value);
-  const { id } = useParams();
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const id = location.pathname.split('/').pop();
+
+  useEffect(() => {
+    dispatch(fetchCryptos());
+  }, [dispatch]);
+
+  const filteredCrypto = cryptos.filter((each) => each.rank === id) || [];
+  const selectedCrypto = filteredCrypto[0] || {};
 
   return (
     <div>
       <div className={`cryptoarea ${currTheme === true ? 'darkcryptoarea' : 'lightcryptoarea'}`}>
-        <p className="cryptoname">{cryptos[id].name}</p>
+        <p className="cryptoname">{selectedCrypto.name}</p>
         <p><img src={coins} alt="fancy" width="300" /></p>
       </div>
       <p className={`allstats ${currTheme === true ? 'darkallstats' : 'lightallstats'}`}>CRYPTO DETAILS</p>
       <div>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Symbol:</span>
-          <span>{cryptos[id].symbol}</span>
+          <span>{selectedCrypto.symbol}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Price | USD:</span>
-          <span>{cryptos[id].priceUsd}</span>
+          <span>{selectedCrypto.priceUsd}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Supply:</span>
-          <span>{cryptos[id].supply}</span>
+          <span>{selectedCrypto.supply}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Max Supply:</span>
-          <span>{cryptos[id].maxSupply}</span>
+          <span>{selectedCrypto.maxSupply}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Change Percent | 24hrs:</span>
-          <span>{cryptos[id].changePercent24Hr}</span>
+          <span>{selectedCrypto.changePercent24Hr}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Market Cap | USD:</span>
-          <span>{cryptos[id].marketCapUsd}</span>
+          <span>{selectedCrypto.marketCapUsd}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>Volume | USD | 24hrs:</span>
-          <span>{cryptos[id].volumeUsd24Hr}</span>
+          <span>{selectedCrypto.volumeUsd24Hr}</span>
         </p>
         <p className={`detailslist ${currTheme === true ? 'darkdetailslist' : 'lightdetailslist'}`}>
           <span>VWAP | 24hrs:</span>
-          <span>{cryptos[id].vwap24Hr}</span>
+          <span>{selectedCrypto.vwap24Hr}</span>
         </p>
       </div>
     </div>
