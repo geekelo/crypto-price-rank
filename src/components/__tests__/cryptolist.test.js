@@ -57,7 +57,7 @@ test('CryptoList component matches snapshot', () => {
       <p
         class="price"
       >
-        $ 50000
+        $50000
       </p>
     </div>
   </a>

@@ -20,7 +20,8 @@ function Cryptopage() {
     dispatch(fetchCryptos());
   }, [dispatch]);
 
-  const selectedCrypto = cryptos[id] || {};
+  const filteredCrypto = cryptos.filter((each) => each.rank === id) || [];
+  const selectedCrypto = filteredCrypto[0] || {};
 
   return (
     <div>

@@ -8,14 +8,14 @@ import './styles/dark/cryptolist.css';
 import coin from './assets/coin.png';
 
 function CryptoList({
-  id,
+  rank,
   name,
   price,
 }) {
   const currTheme = useSelector((state) => state.theme.value);
 
   return (
-    <NavLink to={`/cryptopage/${id}`} className={`list ${currTheme === true ? 'darklist' : 'lightlist'}`}>
+    <NavLink to={`/cryptopage/${rank}`} className={`list ${currTheme === true ? 'darklist' : 'lightlist'}`}>
       <p className="gotoArrow"><BsArrowRightCircle /></p>
       <div className="coinDetails">
         <img src={coin} alt="coin" width="20" />
@@ -30,7 +30,7 @@ function CryptoList({
 }
 
 CryptoList.propTypes = {
-  id: PropTypes.string.isRequired,
+  rank: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
 };
