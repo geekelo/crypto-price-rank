@@ -203,7 +203,7 @@ CSS | ```npx stylelint "**/*.{css,scss}" ```
 If you get a flood of errors keep in mind that linters guide you in writing a clean code!
 ```
 ### Run Tests <a name="run-tests"></a>
-You can run this program on your browser
+You can run this program on using `npm start`
 
 ### Deployment <a name="deployment"></a>
 
