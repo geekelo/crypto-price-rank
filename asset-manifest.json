@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/crypto-price-rank/static/css/main.d25630f8.css",
+    "main.js": "/crypto-price-rank/static/js/main.13120b9f.js",
+    "static/media/coins.png": "/crypto-price-rank/static/media/coins.3960ac373b2847b8281a.png",
+    "static/media/bggif.gif": "/crypto-price-rank/static/media/bggif.bb9c57bfe8fc8480d011.gif",
+    "static/media/coin.png": "/crypto-price-rank/static/media/coin.816399d98abfa6ebd628.png",
+    "static/media/logo.png": "/crypto-price-rank/static/media/logo.3f0415e6d2212ed3c269.png",
+    "index.html": "/crypto-price-rank/index.html",
+    "main.d25630f8.css.map": "/crypto-price-rank/static/css/main.d25630f8.css.map",
+    "main.13120b9f.js.map": "/crypto-price-rank/static/js/main.13120b9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d25630f8.css",
+    "static/js/main.13120b9f.js"
+  ]
+}
