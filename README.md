@@ -157,7 +157,7 @@ Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presen
 > View the live demo of this project by clicking the text below.
 <!-- - [See Live Demo via Github pages](https://geekelo.github.io/bookstore-cms/) -->
 - [See Live Domo via gh-pages](https://geekelo.github.io/crypto-price-rank/)
-- [See Live Demo via Vercel](https://crypto-price-rank.vercel.app/)
+- [See Live Demo via Vercel](https://crypto-price-ranker.vercel.app/)
 - [First Presentation Video](https://youtu.be/1zCEFFYB-So)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
