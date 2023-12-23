@@ -27,7 +27,8 @@ After you're finished please remove all the comments and instructions.
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://geekelo.com.ng/wp-content/uploads/2023/12/project-signature.gif" alt="signature" width=""  height="auto" />  <br/>
+ <img src="https://geekelo.com.ng/wp-content/uploads/2023/12/project-signature1.gif" alt="signature" >
+ <br/>
 
   <h3><b></b></h3>
 
